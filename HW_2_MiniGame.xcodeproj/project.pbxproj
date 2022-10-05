@@ -13,6 +13,10 @@
 		BE11C41E28EDF2830096654C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE11C41C28EDF2830096654C /* Main.storyboard */; };
 		BE11C42028EDF2830096654C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE11C41F28EDF2830096654C /* Assets.xcassets */; };
 		BE11C42328EDF2830096654C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE11C42128EDF2830096654C /* LaunchScreen.storyboard */; };
+		BE11C42C28EDF4B40096654C /* Gamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE11C42B28EDF4B40096654C /* Gamer.swift */; };
+		BE11C42F28EDF8180096654C /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE11C42E28EDF8180096654C /* Dice.swift */; };
+		BE11C43228EDF8E70096654C /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE11C43128EDF8E70096654C /* Board.swift */; };
+		BE11C43A28EE20F40096654C /* GameRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE11C43928EE20F40096654C /* GameRules.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		BE11C41F28EDF2830096654C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE11C42228EDF2830096654C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE11C42428EDF2830096654C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE11C42B28EDF4B40096654C /* Gamer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gamer.swift; sourceTree = "<group>"; };
+		BE11C42E28EDF8180096654C /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		BE11C43128EDF8E70096654C /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		BE11C43928EE20F40096654C /* GameRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRules.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 		BE11C41528EDF2830096654C /* HW_2_MiniGame */ = {
 			isa = PBXGroup;
 			children = (
+				BE11C43828EE20630096654C /* GameRules */,
+				BE11C43028EDF8D90096654C /* Board */,
+				BE11C42D28EDF80D0096654C /* Dice */,
+				BE11C42A28EDF4860096654C /* Gamers */,
 				BE11C41628EDF2830096654C /* AppDelegate.swift */,
 				BE11C41828EDF2830096654C /* SceneDelegate.swift */,
 				BE11C41A28EDF2830096654C /* ViewController.swift */,
@@ -65,6 +77,38 @@
 				BE11C42428EDF2830096654C /* Info.plist */,
 			);
 			path = HW_2_MiniGame;
+			sourceTree = "<group>";
+		};
+		BE11C42A28EDF4860096654C /* Gamers */ = {
+			isa = PBXGroup;
+			children = (
+				BE11C42B28EDF4B40096654C /* Gamer.swift */,
+			);
+			path = Gamers;
+			sourceTree = "<group>";
+		};
+		BE11C42D28EDF80D0096654C /* Dice */ = {
+			isa = PBXGroup;
+			children = (
+				BE11C42E28EDF8180096654C /* Dice.swift */,
+			);
+			path = Dice;
+			sourceTree = "<group>";
+		};
+		BE11C43028EDF8D90096654C /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				BE11C43128EDF8E70096654C /* Board.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		BE11C43828EE20630096654C /* GameRules */ = {
+			isa = PBXGroup;
+			children = (
+				BE11C43928EE20F40096654C /* GameRules.swift */,
+			);
+			path = GameRules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +184,10 @@
 			files = (
 				BE11C41B28EDF2830096654C /* ViewController.swift in Sources */,
 				BE11C41728EDF2830096654C /* AppDelegate.swift in Sources */,
+				BE11C43A28EE20F40096654C /* GameRules.swift in Sources */,
+				BE11C43228EDF8E70096654C /* Board.swift in Sources */,
+				BE11C42F28EDF8180096654C /* Dice.swift in Sources */,
+				BE11C42C28EDF4B40096654C /* Gamer.swift in Sources */,
 				BE11C41928EDF2830096654C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

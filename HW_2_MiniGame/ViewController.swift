@@ -11,9 +11,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let diceNumber = 4
+        
+        let gamer1 = Gamer(name: "John", valueOfDices: diceNumber)
+        let gamer2 = Gamer(name: "Andy", valueOfDices: diceNumber)
+        let listOfGamers = [gamer1, gamer2]
+        
+        let gameBoard = Board(numberOfGamers: listOfGamers)
+        
+        gameBoard.startGame(gamers: listOfGamers)
     }
-
-
+    
 }
 
