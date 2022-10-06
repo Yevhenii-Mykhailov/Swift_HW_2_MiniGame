@@ -8,5 +8,5 @@
 import Foundation
 
 protocol GameRules {
-    func basicRule(results: [[String: Int]])
+    func basicRuleForTwoGamers(results: [[String: Int]])
 }

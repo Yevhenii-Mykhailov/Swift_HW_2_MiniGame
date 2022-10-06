@@ -24,10 +24,10 @@ class Board: GameRules {
             result.append(currentMove)
         }
         
-        basicRule(results: result)
+        basicRuleForTwoGamers(results: result)
     }
     
-    func basicRule(results: [[String: Int]]) {
+    func basicRuleForTwoGamers(results: [[String: Int]]) {
         var maxResult = 0
         var resultMessage = ""
         
@@ -39,7 +39,7 @@ class Board: GameRules {
             if let gettingResult = rollingResult {
                 if gettingResult > maxResult {
                     maxResult = gettingResult
-                    resultMessage = "\(currentGamerName ?? resultMessage) is a winner!"
+                    resultMessage = "\(currentGamerName ?? previousGamerName) is a winner!"
                 } else if gettingResult == maxResult {
                     resultMessage = "We have draw! Need to start new game!"
                 } else {
