@@ -15,8 +15,10 @@ struct Gamer: Dice {
         print("\(name) rolling.. ")
         
         var result = 0
-        for _ in 1...valueOfDices {
-            result += Int.random(in: 1...6)
+        for dice in 1...valueOfDices {
+            let diceResult = Int.random(in: 1...6)
+            result += diceResult
+            print("Dice number \(dice) with result: \(diceResult)")
         }
         
         print("Rolling result is \(result)")
