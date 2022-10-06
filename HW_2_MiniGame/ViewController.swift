@@ -13,15 +13,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let diceNumber = 4
-        
-        let gamer1 = Gamer(name: "John", valueOfDices: diceNumber)
-        let gamer2 = Gamer(name: "Andy", valueOfDices: diceNumber)
+        let gamer1 = Gamer(name: "John")
+        let gamer2 = Gamer(name: "Andy")
         let listOfGamers = [gamer1, gamer2]
         
-        let gameBoard = Board(numberOfGamers: listOfGamers)
+        let gameBoard = Board(numberOfGamers: listOfGamers, numberOfDice: diceNumber)
         
         gameBoard.startGame(gamers: listOfGamers)
     }
-    
 }
 

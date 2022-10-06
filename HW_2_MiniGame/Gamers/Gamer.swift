@@ -9,13 +9,12 @@ import Foundation
 
 struct Gamer: Dice {
     var name: String
-    var valueOfDices: Int
     
-    func throwDice() -> Int {
+    func throwDice(_ numberOfDice: Int) -> Int {
         print("\(name) rolling.. ")
         
         var result = 0
-        for dice in 1...valueOfDices {
+        for dice in 1...numberOfDice {
             let diceResult = Int.random(in: 1...6)
             result += diceResult
             print("Dice number \(dice) with result: \(diceResult)")

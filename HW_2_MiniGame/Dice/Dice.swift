@@ -8,5 +8,5 @@
 import Foundation
 
 protocol Dice {
-    func throwDice() -> Int
+    func throwDice(_ numberOfDice: Int) -> Int
 }

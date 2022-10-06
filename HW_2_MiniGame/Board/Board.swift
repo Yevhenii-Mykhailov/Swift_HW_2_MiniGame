@@ -8,18 +8,19 @@
 import Foundation
 
 class Board: GameRules {
-    
     var numberOfGamers: [Gamer]
+    var numberOfDice: Int
     
-    init(numberOfGamers: [Gamer]) {
+    init(numberOfGamers: [Gamer], numberOfDice: Int) {
         self.numberOfGamers = numberOfGamers
+        self.numberOfDice = numberOfDice
     }
     
     func startGame (gamers: [Gamer]) {
         var result = [[String: Int]]()
         
         for gamer in gamers {
-            let currentMove = [gamer.name: gamer.throwDice()]
+            let currentMove = [gamer.name: gamer.throwDice(numberOfDice)]
             result.append(currentMove)
         }
         
